@@ -8,28 +8,28 @@ As we did more research on this topic we realized this issue is much more common
 
 Thus we developed Rumor Reporter, an AI-based program explicitly designed to prevent people from being misled or hurt from fake news 
 
-##What it does
+## What it does
 Rumor Reporter is a cutting-edge web tool that helps people from being misled or hurt from fake news. 
 
 Rumor Reporter  utilizes a passive aggressive classifier and a tf-idf vectorizer, to identify major signs of fake news and displays all this information in a user-friendly interface. Along with detecting fake news, Rumor Reporter provides users with a sentiment analysis. Rumor Reporter returns if the text is positive, negative or neutral. With this tool users can know if the text is generally positive or negative.
 
-##How we built it
+## How we built it
 We divided our tasks into two main groups after about an hour of planning and brainstorming. Nilay focused mostly on the project's user interface and design, while Manit worked primarily on the machine learning model and backend.
 
 Python is the best language to utilize because of its applications in machine learning, which is why we choose it as our language of choice. Rumor Reporter uses scikitlearn because it is the lightweight backend web development library that has become synonymous with Python. This implies that when using Rumor Reporter , our users get a quick and simple experience. In order to make it simpler for our model to recognize fake news and prevent people from being mislead, we also utilized a tf-idf vectorizer to perform a sentiment analysis .
 
 Additionally, to train our model and get it precise enough to meet our standards, we used thousands of different articles from different news sources around the world. This worked really well as we achieved a 99.5% accuracy on our model.
 
-##Challenges we ran into 
+## Challenges we ran into 
 We ran into some problems while trying to train our model to make it more accurate. Using many articles was really time consuming but we needed to do it to increase our model’s accuracy. After countless hours of training our model we finally reached the accuracy of 99.5%.
 
 ##Accomplishments that we are proud of 
 We are really proud of ourselves for being able to design a project that would have the potential to significantly alter the lives of numerous individuals all over the world while still remaining distinctive. We are astounded at how much we were able to complete in such a short period of time and how well the final product came together.
 
-##What we learned
+## What we learned
 Throughout the course of this project, our team gained a great deal of knowledge regarding web development and machine learning. We gained knowledge of libraries like scikit learn and found some intriguing brand-new features in Python such as the passive aggressive classifier. We discovered how to employ computer vision to address problems in our neighborhood and how to incorporate our fixes into engaging applications.
 
-##What's Next
+## What's Next
 In the future for Rumor Reporter , we hope to develop a Mobile App so that you can check for fake news where ever you want. We also plan on adding more features to the program such as reporting the fake news article
 
 ## Why Us?
