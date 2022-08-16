@@ -1,0 +1,161 @@
+{% extends 'base.html' %} {% block head %} {% endblock %} {% block title%} Input {% endblock %} {% block body %}
+
+<style>
+
+    header.masthead {
+        position: relative;
+        overflow: hidden;
+        padding-top: calc(7rem + 72px);
+        padding-bottom: 7rem;
+        background: linear-gradient(0deg, #000000 0%, #ee0979 100%);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    
+    input[type=text], select, textarea {
+        box-sizing: border-box;
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    .btn{
+        display: block;
+        text-align: center;
+        margin-left: 300px
+    }
+
+    .main-section{
+        background-color: rgba(152, 0, 49, 0.3);
+        box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.8);
+
+        height: 1000px;
+    }
+
+    #text-form{
+        margin-top: 50px;
+        display: block;
+        margin-left: 400px;
+        width: 1500px; 
+        height: 800px;
+    }
+
+    #directions{
+        text-align: center;
+        padding-top: 50px;
+    }
+</style>
+
+<head>
+    <script src="https://kit.fontawesome.com/17505819f3.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- Header-->
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <h1 class="masthead-heading mb-0">Fake News Dectector</h1>
+            
+        </div>
+    </div>
+</header>
+
+
+
+<section class="main-section">
+
+    <h1 id="directions" class="masthead-heading mb-0">Enter your article in the text box</h1>
+
+
+<form id="text-form" action="{{ url_for('predict')}}" method="post" >
+    <!--<input type="text" required="required" id="conatin"> -->
+
+    <textarea name="text" cols="30" rows="10" style="height: 600px;"></textarea>
+
+    <button id="submitButton" class="btn btn-primary btn-xl rounded-pill mt-5" href="#page-bottom" type="submit">Submit</button>
+</form>
+
+
+
+
+</section>
+
+<style>
+    #second-section{
+        background-color: #f78fc1;
+    }
+
+    .title{
+        padding-top: 30px;
+        font-size: 50px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .video{
+        padding-left: 150px;
+    }
+</style>
+
+
+
+
+<!-- Content section 1-->
+<section id="scroll">
+    <div class="container px-5" id="page-bottom">
+        <h2 class="dangers" style="margin-top: 50px;"> Results </h2>
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="/static/assets/img/newspaper.png" alt="..."/></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Our Model shows that the article is:</h2>
+                    <h1 style="font-size: 100px;">{{prediction}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 2-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="/static/assets/img/emotion.png" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Our Model shows that the article is:</h2>
+                    <h1 style="font-size: 100px;">{{sentiment}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 3-->
+<section style="margin-bottom: 40px;">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="/static/assets/img/clapperboard.png" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Video with more information:</h2>
+                    <iframe class="video" width="700" height="315"  style="margin-left: -150px; margin-top: 50px;"
+                        src="https://www.youtube.com/embed/lwVYaY39YbQ" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+<!--{{prediction}}-->
+
+

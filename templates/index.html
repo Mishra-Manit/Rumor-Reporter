@@ -1,0 +1,108 @@
+{% extends 'base.html' %} {% block head %} {% endblock %} {% block title%} Rumor Reporter {% endblock %} {% block body %}
+
+<style>
+
+    header.masthead {
+        position: relative;
+        overflow: hidden;
+        padding-top: 250px;
+        padding-bottom: 7rem;
+        background: linear-gradient(0deg, #000000 0%, #ee0979 100%);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+</style>
+
+<!-- Header-->
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <h1 class="masthead-heading mb-0">Fake News Dectector</h1>
+            <a class="btn btn-primary btn-xl rounded-pill mt-5" href="input">Try Now!</a>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+<!-- Content section 1-->
+<section id="scroll">
+    <div class="container px-5">
+        <h2 class="dangers">Dangers of Fake News </h2>
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="/static/assets/img/01.jpg" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Many People Believe The Fake News</h2>
+                    <p>Studies have shown that many Americans cannot tell what news is fake and what news is real. This can create confusion and misunderstanding about important social and political issues.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 2-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="/static/assets/img/02.jpg" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Fake News Can Be Harmful to Your Health</h2>
+                    <p>There are many fake and misleading news stories related to medical treatments and major diseases like cancer or diabetes. Trusting these false stories could lead you to make decisions that may be harmful to your health.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 3-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="/static/assets/img/03.jpg" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Fake News Can Put You In Physical Danger</h2>
+                    <p>Malinformation’s dangers are blatant. For example, publishing a person’s private address can put them at risk of physical danger.Fake news is created to change people’s beliefs, attitudes, or perceptions, so they will ultimately change their behavior. If you believe fake news, then someone else drives your beliefs and decisions. Also, in some parts of the world, there can be legal consequences for publishing and sharing fake news.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content section 1-->
+<section id="scroll" style="margin-bottom: 100px;">
+    <div class="container px-5" style="margin-left: 100px; margin-right: 100px;">
+        <h2 class="dangers">Fake News, Propaganda, and Other Types of False Information</h2>
+        <p>
+            False information can distort people’s beliefs, especially when it's repeated over and over again. Repetition reinforces  messages - think about a young child learning about letters by repeating the alphabet. Repetition is a great tool when used to  reinforce positive and productive messages, and extremely dangerous when false information is continuously repeated by people in power positions, whose goal is to control the thoughts and beliefs of a group for personal gain. 
+        </p>
+        <p style="margin-top: 30px;">
+            Repetition can numb the mind. It has been scientifically proven repeatedly, that when people are presented with evidence that proves something 100% correct, quite often not only they refuse to acknowledge the facts, they double-down on their beliefs in false information. They have willingly or unwillingly abandoned their own power of independent and critical thinking.
+        </p>
+        <p style="font-weight: bolder; margin-top: 50px; font-size: 25px;">
+            By treating fake news as real, people put themselves and others at risk in a number of critical ways:
+        </p>
+        <p style="margin-top: 30px;">
+            Health -  believing the Big Lie that Covid-19/coronavirus is a hoax or "just like the flu," people refuse to take the necessary precautions to protect themselves and others.  They may refuse effective treatments or seek "cures" that may either not work or may cause themselves or others serious injury, illness, or death.
+        </p>
+        <p style="margin-top: 0cm;">
+            Finances - people risk losing their savings, their retirement income, or going into significant debt by giving away hard-earned money thinking they will get rich quick, or a loved one will be miraculously cured.
+        </p>
+        <p style="margin-top: 0cm;">
+            Relationships - people put not only themselves at risk but also the health of finances of loved ones; On a societal level fake news can encourages hate speech, bullying, violence, discrimination, and bigotry against targeted groups.
+        </p>
+    </div>
+</section>
+</body>
+
+
+{% endblock %}
